@@ -20,16 +20,19 @@
         $(".main-cart").click(function(){
             // $(".cart").css("width","30%").show();
         //  $(".shopping").css("width","60%").show();
-        window.location.href = "C:/Users/Nabakishore/Desktop/Web Designing/shopping/shopping-cart.html";
-
+           
               console.log("cart");
-           cartCount.count = localStorage.getItem("count");
+           cartCount.count = Number(localStorage.getItem("count"));
            if(cartCount.count>=0){
                 let getTotalPriceFromLocalStorage = localStorage.getItem("totalPrice");
                 $(".totalPrice").text("$"+getTotalPriceFromLocalStorage);
             }else{
-                $(".totalPrice").text("$"+0);
+                let price = 0;
+                $(".totalPrice").text("$"+price);
+               // let cart = [];
+               // localStorage.setItem("cart[]",JSON.stringify(cart));
             }
+            window.location.href = "C:/Users/Nabakishore/Desktop/Web Designing/shopping/shopping-cart.html";
         })
  
     $(".cart-icon").click(function (){
