@@ -253,7 +253,7 @@ let getCart = {
 }
 
 $(".close-cart").click(function(){
-    window.location.href = "C:/Users/Nabakishore/Desktop/Web Designing/shopping/shopping.html";
+    window.location.href = "./shopping.html";
 })
 $(".cart").delegate(".deleteIcon","click",function () {
     console.log("inside deleIcon");

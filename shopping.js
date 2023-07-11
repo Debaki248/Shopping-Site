@@ -32,7 +32,7 @@
                // let cart = [];
                // localStorage.setItem("cart[]",JSON.stringify(cart));
             }
-            window.location.href = "C:/Users/Nabakishore/Desktop/Web Designing/shopping/shopping-cart.html";
+            window.location.href = "./shopping-cart.html";
         })
  
     $(".cart-icon").click(function (){
